@@ -228,7 +228,7 @@ export function saveElements(elements) {
   const url = URL.createObjectURL(blob);
 
   const link = document.createElement("a");
-  link.download = "canvas.sketchFlow";
+  link.download = "canvas.drawSync";
   link.href = url;
   link.click();
 }
@@ -252,7 +252,7 @@ export function uploadElements(setElements) {
 
   const fileInput = document.createElement("input");
   fileInput.type = "file";
-  fileInput.accept = ".kyrosDraw";
+  fileInput.accept = ".drawSync";
   fileInput.onchange = uploadJSON;
   fileInput.click();
 }
